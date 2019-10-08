@@ -49,13 +49,12 @@ function onClick() {
     sprite.scale.x *= .9;
     sprite.scale.y *= .9;
 		basicText.text = 'Points: '+count;
-		if(count == 40)
+		if(count == 45)
 		{
 			const gameOverText = new PIXI.Text('GAME OVER');
 			gameOverText.x = app.screen.width / 2;
 			gameOverText.y = app.screen.height / 2;
 			app.stage.addChild(gameOverText);
-			app.stage.removeChild(sprite);
 		}
 
 }
